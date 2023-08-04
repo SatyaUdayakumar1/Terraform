@@ -1,8 +1,8 @@
 # configure aws provider
 provider "aws"{
     region      = var.region
-    access_key  = "AKIAU4VXSXD7HEIJQHFU"
-    secret_key  = "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" 
+    access_key  = "AccessKey"
+    secret_key  = "SecretKey" 
 }
 
 # create vpc
