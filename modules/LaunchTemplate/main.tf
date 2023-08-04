@@ -98,8 +98,8 @@ resource "aws_instance" "app_instance_az1" {
     source ~/.bashrc
 
     # Download student_info.jar from S3 bucket 
-    wget -P /home/ec2-user/JarFile https://applicationsb.s3.amazonaws.com/student_info.jar
-    java -jar /home/ec2-user/JarFile/student_info.jar
+    wget -P /home/ec2-user/JarFile https://<s3bucket-name>.s3.amazonaws.com/<application.jar>
+    java -jar /home/ec2-user/JarFile/<application.jar>
     
   EOT
   )
@@ -150,8 +150,8 @@ resource "aws_instance" "app_instance_az2" {
     source ~/.bashrc
 
     # Download student_info.jar from S3 bucket 
-    wget -P /home/ec2-user/JarFile https://applicationsb.s3.amazonaws.com/student_info.jar
-    java -jar /home/ec2-user/JarFile/student_info.jar
+    wget -P /home/ec2-user/JarFile https://<s3bucket-name>.s3.amazonaws.com/<application.jar>
+    java -jar /home/ec2-user/JarFile/<application.jar>
     
   EOT
   )
