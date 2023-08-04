@@ -19,7 +19,7 @@ resource "aws_db_instance" "db_instance" {
   multi_az                = true
   identifier              = "my-db-instance"
   username                = "postgres"
-  password                = "<PASSWORD>"
+  password                = "<PASSWORD>"            #Replace this with your password
   instance_class          = "db.m5.large"
   allocated_storage       = 20
   db_subnet_group_name    = aws_db_subnet_group.database_subnet_group.name
